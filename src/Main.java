@@ -11,5 +11,14 @@ public class Main {
         System.out.println("AshuH-> " + (regexValidator.validateFirstName("AshuH") ? "Valid" : "Invalid"));
         System.out.println();
 
+        //Check for validation of Last name
+        System.out.println("Last Name");
+        System.out.println("Mishra-> " + (regexValidator.validateLastName("Mishra") ? "Valid" : "Invalid"));
+        System.out.println("M-> " + (regexValidator.validateLastName("M") ? "Valid" : "Invalid"));
+        System.out.println("mishra-> " + (regexValidator.validateLastName("mishra") ? "Valid" : "Invalid"));
+        System.out.println("MishrA-> " + (regexValidator.validateLastName("MishrA") ? "Valid" : "Invalid"));
+
+        System.out.println();
+
     }
 }
