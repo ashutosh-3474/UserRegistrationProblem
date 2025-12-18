@@ -6,9 +6,11 @@ public class RegexValidator {
     //Regex pattern for first name
     private static final String  FirstNameRegex = "^[A-Z][a-zA-Z]{2,}$";
 
-
     //Regex pattern for Last name
     private static final String  LastNameRegex = "^[A-Z][a-zA-Z]{2,}$";
+
+    //Regex pattern for email
+    private static final String EmailRegex = "^[a-zA-Z0-9]+([.+-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]{2,}){1,2}";
 
     //Method to validate the input with the regex pattern
     private static boolean validate(String input, String regex)
@@ -27,4 +29,7 @@ public class RegexValidator {
     public static boolean validateLastName(String lastName) {
         return validate(lastName, LastNameRegex);
     }
+
+    //Method to validate email
+    public static boolean validateEmail(String email) { return validate(email, EmailRegex); }
 }
