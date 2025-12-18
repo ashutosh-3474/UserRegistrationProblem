@@ -10,7 +10,7 @@ public class RegexValidator {
     private static final String  LastNameRegex = "^[A-Z][a-zA-Z]{2,}$";
 
     //Regex pattern for email
-    private static final String EmailRegex = "^[a-zA-Z0-9]+([.+-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]{2,}){1,2}";
+    private static final String EmailRegex = "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]{2,}){1,2}";
 
     //Method to validate the input with the regex pattern
     private static boolean validate(String input, String regex)
